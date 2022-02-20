@@ -1,0 +1,44 @@
+#geral {
+    margin: 20% 35%;
+}
+
+#body {
+    margin: 8%;
+}
+
+#v1 {
+    width: 162px;
+    height: 30px;
+    margin: 10px 22px 10px;
+}
+
+#v2 {
+    width: 162px;
+    height: 30px;   
+    margin-left: 10px;
+}
+
+#operador, #selecao {
+    width: 170px;
+    height: 30px;
+    margin-top: 12px;
+    margin-left: 6px;
+}
+
+#btn {
+    background: #B9DFFF;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+}
+
+#btn:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none;
+}
