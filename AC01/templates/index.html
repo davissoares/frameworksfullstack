@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"> -->
+    <title>Calculadora</title>
+</head>
+<body>
+    <form action="/calcular" method="POST" name="testes">
+        <div id="geral">
+            <fieldset> 
+                <h1>Calculadora</h1>
+                <div id="body">
+                    <label>Digite um número: </label><input type="text" id="v1" name="v1" required></br>
+                        <label>Digite outro número: </label><input type="text" id="v2" name="v2" required></br>
+                            <label>Selecione a operação: </label>
+                                <select name="operador" id="selecao">
+                                    <option value="soma" id="operador">Soma</option>
+                                    <option value="subtração" id="operador">Subtração</option>
+                                    <option value="multiplicação" id="operador">Multiplicação</option>
+                                    <option value="divisão" id="operador" name="operador">Divisão</option>
+                                </select>
+                            <input type="submit" name="enviar" id="btn">
+                </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
