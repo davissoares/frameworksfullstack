@@ -2,8 +2,17 @@ import mysql.connector
 from flask import Flask, render_template, request
 from flaskext.mysql import MySQL
 
+mysql = MySQL()
 app = Flask(__name__)
 app.url_map.strict_slashes = False
+
+# MySQL configurations
+app.config['MYSQL_DATABASE_USER'] = 'root'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'dsoares04'
+app.config['MYSQL_DATABASE_DB'] = 'ac02'
+app.config['MYSQL_DATABASE_HOST'] = ''
+#app.config['MYSQL_DATABASE_HOST'] = ''
+mysql.init_app(app)
 
 
 #Criar Conexão com Banco MySQL
