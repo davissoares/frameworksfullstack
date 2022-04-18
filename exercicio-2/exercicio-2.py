@@ -16,8 +16,6 @@ mysql.init_app(app)
 
 conexao = mysql.connect()
 cursor = conexao.cursor()
-cursor.execute(criar_tabela_sql)
-print("Tabela criada com sucesso!")
 
 
 @app.route('/')
