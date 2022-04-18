@@ -7,8 +7,8 @@ app.url_map.strict_slashes = False
 
 # MySQL configurations
 app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'dsoares04'
-app.config['MYSQL_DATABASE_DB'] = 'ac02'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'admin'
+app.config['MYSQL_DATABASE_DB'] = 'teste'
 app.config['MYSQL_DATABASE_HOST'] = '172.17.0.2'
 #app.config['MYSQL_DATABASE_HOST'] = ''
 mysql.init_app(app)
