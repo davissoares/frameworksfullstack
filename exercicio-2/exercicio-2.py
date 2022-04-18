@@ -34,7 +34,7 @@ def incluir_usuario():
     nome = request.form['nome']
     email = request.form['email']
     senha = request.form['senha']
-    cursor.execute("""INSERT INTO tb_usuarios(nome, email, senha) VALUES(%s, %s, %s)""", (nome, email, senha))
+    cursor.execute("""INSERT INTO tbl_user(nome, email, senha) VALUES(%s, %s, %s)""", (nome, email, senha))
     conexao.commit()
     cursor.close()
     conexao.close()
