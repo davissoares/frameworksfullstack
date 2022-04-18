@@ -15,16 +15,7 @@ app.config['MYSQL_DATABASE_HOST'] = '172.17.0.2'
 mysql.init_app(app)
 
 
-#Criar Conexão com Banco MySQL
-conexao = mysql.connector.connect(database='db_usuario', user='root', password='dsoares04')
-criar_tabela_sql = """CREATE TABLE IF NOT EXISTS tb_usuarios(
-                        id int(11) NOT NULL AUTO_INCREMENT,
-                        nome VARCHAR(255) NOT NULL,
-                        email VARCHAR(200) NOT NULL,
-                        senha VARCHAR(255) NOT NULL,
-                        PRIMARY KEY (id))"""
-
-
+conexao = mysql.connect()
 cursor = conexao.cursor()
 cursor.execute(criar_tabela_sql)
 print("Tabela criada com sucesso!")
