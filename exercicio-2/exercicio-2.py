@@ -43,7 +43,7 @@ def incluir_usuario():
 
 @app.route("/listar_usuario", methods=['POST', 'GET'])
 def listar_usuario():
-    consulta_bd = "select * from tb_usuarios"
+    consulta_bd = "select * from tb_user"
     cursor = conexao.cursor()
     cursor.execute(consulta_bd)
     details = cursor.fetchall()
