@@ -13,6 +13,6 @@ web:
 db:
   image: mysql:5.7
   environment:
-      MYSQL_ROOT_PASSWORD: dsoares04
+      MYSQL_ROOT_PASSWORD: admin
   ports:
     - "3309:3309"
